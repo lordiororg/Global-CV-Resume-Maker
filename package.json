@@ -1,0 +1,15 @@
+{
+  "name": "global-cv-maker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Global CV & Resume Maker: country-aware CV templates with Word and PDF export.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "serve": "npm run build && python3 -m http.server -d dist 8080",
+    "e2e": "python3 tests/e2e.py",
+    "check-links": "node scripts/check-links.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
