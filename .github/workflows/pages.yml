@@ -1,0 +1,6 @@
+      - name: Install browser for end-to-end test
+        run: pip install playwright pdfplumber && python -m playwright install --with-deps chromium
+      - name: End-to-end test
+        run: python tests/e2e.py
+      - name: Print and PDF margins test
+        run: python tests/print_check.py
